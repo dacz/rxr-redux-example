@@ -7,6 +7,11 @@ import {
 } from '../utils/constants';
 import asyncFetchDataRx from '../utils/asyncFetchDataRx';
 
+// each reducer is "connected" to corresponding message stream.
+// this makes it more straightforward (IMHO)
+// the main difference: RxR reducer doesn't return new state but the function
+// that may be used to create new state.
+
 const clientsDataLoadingReducer$ = actionStreams.clientsDataLoading$
   .map((ts) => state => ({ ...state, clients: { ...state.clients, status: IS_LOADING, ts } }));
 
@@ -28,6 +33,9 @@ const receivedClientsDataReducer$ = actionStreams.receivedClientsData$
     return state;
   });
 
+// we have to use flatMap here because
+// the asyncFetchDataRx() function returns Observable.fromPromise
+// and it is metastream that we have to flatten
 const fetchClientsReducer$ = actionStreams.fetchClients$
   .flatMap((url = CLIENTS_DATA_URL) => {
     const ts = Date.now();
@@ -43,6 +51,7 @@ const fetchClientsReducer$ = actionStreams.fetchClients$
     return (state) => state;
   });
 
+// we combine the reducers to one stream
 const reducer$ = combineReducers(
   clientsDataLoadingReducer$,
   setFilterReducer$,

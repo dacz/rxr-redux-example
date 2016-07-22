@@ -1,15 +1,26 @@
 # rxr-redux-example
+
+[![Build Status](https://travis-ci.org/dacz/rxr-redux-example.svg?branch=master)](https://travis-ci.org/dacz/rxr-redux-example)
+
 RxR and Redux side by side to learn the principles.
 
-_2016-07-22:_ published source code (without comments, yet) of example in RxR. There are actions (messageStreams), reducers and even async loading. But no Redux code to compare with, yet, and no docs.
+**[Read the docs about differences between Redux and RxR app ... &raquo;](./docs/README.md)**
+
+### Example app (this repo)
+
+Read the source for RxR example app, download, play with it, enhance.
 
 ```
 npm install
 npm run dev
 ```
 
-Read the [Specs](./specs/SPECS.md) to know what we are building :)
+[Specs](./specs/SPECS.md) of this example.
 
 Leave feedback in issues - about anything.
 
 Any enhancements of the code - RxR or Redux (once it will be there) are welcome! We are learning together.
+
+### Then refactor your current Redux app to RxR :)
+
+### Smile!

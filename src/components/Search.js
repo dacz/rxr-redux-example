@@ -5,11 +5,13 @@ class Search extends Component {
 
   static propTypes = {
     setFilter: PropTypes.func.isRequired,
+    filter:    PropTypes.string
   }
 
   componentDidMount() {
     this._input.focus();
-    // console.log('props search: ', this.props);
+    this._input.value = this.props.filter;
+    this.searchString = this.props.filter;
   }
 
   searchString = '';
