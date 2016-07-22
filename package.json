@@ -4,18 +4,18 @@
   "description": "RxR and Redux side by side to learn the principles.",
   "main": "dist/index.html",
   "scripts": {
-    "clean": "rm -rf public && mkdir public",
+    "clean": "rimraf public && mkdir public",
     "lint": "eslint src test",
     "test": "cross-env NODE_ENV=test ava",
     "test:watch": "npm test -- --watch -v",
     "check:src": "npm run lint && npm run test",
     "dev": "node server/webpack-dev-server",
-    "build:client": "webpack --config webpack/webpack.prod.config.js -p",
-    "build": "NODE_ENV=production npm run clean && npm run build:client",
+    "build:client": "cross-env NODE_ENV=production webpack --config webpack/webpack.prod.config.js -p",
+    "build": "cross-env NODE_ENV=production npm run clean && npm run build:client",
     "start": "node server/server.js"
   },
   "author": "dacz",
-  "license": "WTFPL",
+  "license": "MIT",
   "ava": {
     "files": [
       "test/**/test-*.js"
