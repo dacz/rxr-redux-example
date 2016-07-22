@@ -13,9 +13,9 @@ Let's go through the app.
 * [actions and message streams](./actions.md)
 * [reducer](./reducer.md)
 * [create store or state?](./createState.md)
-* [connect with state](./connectWithState.md)
+* [connect with state](./connectWith.md)
 * [async fetch and RxJS](./asyncFetch.md)
 
 First - [read the specs](../specs/SPECS.md). You should know what we are building... [&raquo;](../specs/SPECS.md)
 
-[**RxR gitbook**](https://dacz.github.io/rxr/) 
+[**RxR gitbook**](https://dacz.github.io/rxr/)

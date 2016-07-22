@@ -8,4 +8,4 @@ I wanted to mention it because it's better for understanding similarities with `
 
 ---
 
-So let's [connect with state! ... &raquo;](./connectWithState.md)
+So let's [connect with state! ... &raquo;](./connectWith.md)

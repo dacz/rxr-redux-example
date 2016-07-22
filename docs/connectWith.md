@@ -58,6 +58,6 @@ Refactoring our HoC to RxR would be really easy. Hoooray!
 
 ---
 
-That's pretty much all.
+That's pretty much all. 
 
 But wait, let's say a word [about async ... &raquo;](./asyncFetch.md)
