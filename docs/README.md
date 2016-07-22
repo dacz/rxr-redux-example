@@ -18,4 +18,4 @@ Let's go through the app.
 
 First - [read the specs](../specs/SPECS.md). You should know what we are building... [&raquo;](../specs/SPECS.md)
 
-[**RxR gitbook**](https://dacz.github.io/rxr/)
+[**RxR gitbook**](https://dacz.github.io/rxr/) 
