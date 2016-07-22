@@ -7,3 +7,9 @@ _2016-07-22:_ published source code (without comments, yet) of example in RxR. T
 npm install
 npm run dev
 ```
+
+Read the [Specs](./specs/SPECS.md) to know what we are building :)
+
+Leave feedback in issues - about anything.
+
+Any enhancements of the code - RxR or Redux (once it will be there) are welcome! We are learning together.
