@@ -159,13 +159,13 @@ const fetchClientsReducer$ = actionStreams.fetchClients$
 
 
 // we combine the reducers to one stream
-const reducer$ = combineReducers(
+const reducer$ = combineReducers([
   clientsDataLoadingReducer$,
   setFilterReducer$,
   selectClientReducer$,
   receivedClientsDataReducer$,
   fetchClientsReducer$
-);
+]);
 
 export default reducer$;
 ```

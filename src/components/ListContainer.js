@@ -28,7 +28,6 @@ class ListComponent extends Component {
   // that uses them. Again, better to use this app inside bigger one.
   componentWillMount() {
     this.props.fetchClients();
-    this.props.selectClient('ahoj');
     this.listToDisplay = this.filterList(
       this.props.clients.data,
       this.props.filter,

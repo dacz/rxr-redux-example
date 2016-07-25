@@ -19,3 +19,8 @@ Let's go through the app.
 First - [read the specs](../specs/SPECS.md). You should know what we are building... [&raquo;](../specs/SPECS.md)
 
 [**RxR gitbook**](https://dacz.github.io/rxr/)
+
+
+### Updates
+
+* 2016-07-24: updated RxR version with logging

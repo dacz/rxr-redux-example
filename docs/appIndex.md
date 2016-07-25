@@ -39,7 +39,7 @@ render((
 import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'rxr-react';
-import { createState } from 'rxr';
+import { createState, createLoggerStream, startLogging, messageStreamsMonitor$ } from 'rxr';
 
 import styles from './index.css';
 
@@ -57,6 +57,10 @@ const initialState = {
 
 // and because in RxR is no need of store, we create state directly
 const state$ = createState(reducer$, initialState);
+
+// we will log all state changes  and messageStreams events to console
+const loggerStream$ = createLoggerStream(state$, messageStreamsMonitor$);
+startLogging(loggerStream$);
 
 // RxR-React provides similar Provider component as React-Redux
 render(

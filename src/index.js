@@ -1,9 +1,8 @@
 import 'babel-polyfill'; // eslint-disable-line
-
 import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'rxr-react';
-import { createState } from 'rxr';
+import { createState, createLoggerStream, startLogging, messageStreamsMonitor$ } from 'rxr';
 
 import styles from './index.css'; // eslint-disable-line
 
@@ -18,6 +17,9 @@ const initialState = {
 };
 
 const state$ = createState(reducer$, initialState);
+
+const loggerStream$ = createLoggerStream(state$, messageStreamsMonitor$);
+startLogging(loggerStream$);
 
 render(
   <Provider state$={ state$ }>
