@@ -1,5 +1,7 @@
 # rxr-redux-example
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/dacz/rxr-redux-example.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://travis-ci.org/dacz/rxr-redux-example.svg?branch=master)](https://travis-ci.org/dacz/rxr-redux-example)
 
 RxR and Redux side by side to learn the principles.
